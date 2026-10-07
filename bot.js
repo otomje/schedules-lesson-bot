@@ -18,6 +18,10 @@ bot.start((ctx) => ctx.reply(`
 \n🛑 Чтобы остановить рассылку, напиши: /stop
 `))
 
+bot.command('test', (ctx) => {
+    ctx.reply('✅ Бот работает')
+})
+
 bot.command('stop', (ctx) => {
     if (removeUser(ctx.chat.id)) {
         ctx.reply(`✅ Рассылка остановлена. Чтобы подписаться снова, выбери класс в котором ты учишься из списка:\n/11b`)
@@ -37,7 +41,8 @@ bot.command('11b', (ctx) => {
 bot.telegram.setMyCommands([
     { command: 'start', description: 'Начать работу с ботом' },
     { command: '11b', description: 'Подписаться на расписание 11Б' },
-    { command: 'stop', description: 'Остановить рассылку' },
+    { command: 'test', description: 'Проверить, работает ли бот' },
+    { command: 'stop', description: 'Остановить рассылку' }
 ])
 
 startScheduler(bot)

@@ -1,6 +1,6 @@
 {
     "name": "schedules-lesson-bot",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A bot that sends the class schedule.",
     "license": "MIT",
     "author": "otomje",
