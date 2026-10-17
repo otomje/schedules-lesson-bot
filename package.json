@@ -1,11 +1,19 @@
 {
     "name": "schedules-lesson-bot",
-    "version": "1.0.2",
-    "description": "A bot that sends the class schedule.",
+    "version": "1.0.3",
+    "description": "Telegram bot for daily class schedules and lesson reminders.",
+    "homepage": "https://github.com/otomje/schedules-lesson-bot#readme",
+    "bugs": {
+        "url": "https://github.com/otomje/schedules-lesson-bot/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/otomje/schedules-lesson-bot.git"
+    },
     "license": "MIT",
     "author": "otomje",
     "type": "commonjs",
-    "main": "index.js",
+    "main": "bot.js",
     "scripts": {
         "start": "node ./bot.js"
     },

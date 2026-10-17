@@ -2,9 +2,6 @@ const { Telegraf } = require('telegraf')
 // const { message } = require('telegraf/filters')
 // const fs = require('fs')
 require('dotenv').config()
-// Render
-const http = require('http')
-http.createServer((req, res) => res.end('ok')).listen(process.env.PORT || 3000, '0.0.0.0')
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
